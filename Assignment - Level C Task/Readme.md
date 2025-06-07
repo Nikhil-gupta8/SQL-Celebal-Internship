@@ -1,4 +1,3 @@
-
 # SQL Solutions for Assignment - Level C Task
 
 This repository contains SQL solutions and table setups for a variety of tasks under Level C, designed to cover a broad range of SQL skills including table creation, data insertion, joins, functions, recursion, and aggregate logic.
@@ -68,7 +67,7 @@ INSERT INTO Functions (X, Y) VALUES
 (5, 3);
 ```
 
-### ✅ Task 4: Contests and Stats
+###  Task 4: Contests and Stats
 ```sql
 CREATE TABLE Contests (
     contest_id INT PRIMARY KEY,
@@ -111,7 +110,7 @@ INSERT INTO Submission_Stats (challenge_id, total_submissions, total_accepted_su
 (3, 40, 20);
 ```
 
-### ✅ Task 5: Submissions and Hackers
+###  Task 5: Submissions and Hackers
 ```sql
 CREATE TABLE Submissions (
     submission_id INT PRIMARY KEY,
@@ -137,7 +136,7 @@ INSERT INTO Hackers (hacker_id, name) VALUES
 (3, 'Charlie');
 ```
 
-### ✅ Task 6: STATION
+###  Task 6: STATION
 ```sql
 CREATE TABLE STATION (
     ID INT PRIMARY KEY,
@@ -150,10 +149,10 @@ INSERT INTO STATION (ID, LAT_N, LONG_W) VALUES
 (2, 34.0522, 118.2437);
 ```
 
-### ✅ Task 7: Prime Numbers
+###  Task 7: Prime Numbers
 - No table needed. Pure SQL logic for generating primes.
 
-### ✅ Task 8: Occupations
+###  Task 8: Occupations
 ```sql
 CREATE TABLE Occupations (
     Name VARCHAR(100),
@@ -171,7 +170,7 @@ INSERT INTO Occupations (Name, Occupation) VALUES
 ('Robert', 'Actor');
 ```
 
-### ✅ Task 9: BST
+###  Task 9: BST
 ```sql
 CREATE TABLE BST (
     N INT PRIMARY KEY,
@@ -186,7 +185,7 @@ INSERT INTO BST (N, P) VALUES
 (5, 2);
 ```
 
-### ✅ Task 10: Company Hierarchy
+###  Task 10: Company Hierarchy
 ```sql
 CREATE TABLE Company (
     company_code INT PRIMARY KEY,
@@ -234,7 +233,7 @@ INSERT INTO Employee (company_code, employee_code) VALUES
 (2, 402);
 ```
 
-### ✅ Task 15: Employees and Salary
+###  Task 15: Employees and Salary
 ```sql
 CREATE TABLE Employees (
     EmployeeID INT PRIMARY KEY,
@@ -250,7 +249,7 @@ INSERT INTO Employees (EmployeeID, Salary) VALUES
 (6, 80000);
 ```
 
-### ✅ Task 16: TableName
+###  Task 16: TableName
 ```sql
 CREATE TABLE TableName (
     ColumnA INT,
@@ -263,10 +262,10 @@ INSERT INTO TableName (ColumnA, ColumnB) VALUES
 (4, 8);
 ```
 
-### ✅ Task 17: Database User Creation
+###  Task 17: Database User Creation
 - No table required. Uses `CREATE LOGIN` and `CREATE USER`.
 
-### ✅ Task 18: Employees with BU, Cost, and Weight
+###  Task 18: Employees with BU, Cost, and Weight
 ```sql
 CREATE TABLE Employees (
     BU VARCHAR(100),
@@ -282,10 +281,10 @@ INSERT INTO Employees (BU, Cost, Weight) VALUES
 ('Finance', 2200, 1.6);
 ```
 
-### ✅ Task 19: Employees with Salary (Again)
+###  Task 19: Employees with Salary (Again)
 - Same as Task 15.
 
-### ✅ Task 20: Source and Target Tables
+###  Task 20: Source and Target Tables
 ```sql
 CREATE TABLE SourceTable (
     KeyColumn INT PRIMARY KEY,
@@ -307,7 +306,3 @@ INSERT INTO SourceTable (KeyColumn, Column1, Column2) VALUES
 INSERT INTO TargetTable (KeyColumn, Column1, Column2) VALUES
 (1, 'A', 'B');
 ```
-
----
-
-👤 **Prepared by:** Rakshit Gupta
