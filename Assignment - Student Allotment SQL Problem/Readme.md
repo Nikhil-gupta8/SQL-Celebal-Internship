@@ -1,4 +1,3 @@
-
 # Student Allotment SQL Problem
 
 This project implements an **elective allocation system** using SQL. The system allocates elective subjects to students based on their **GPA** and **preferences**.
@@ -26,7 +25,7 @@ The system uses the following tables:
 
 ---
 
-##  Setup Instructions
+## Setup Instructions
 
 ### 1. Create and Populate Required Tables
 
@@ -46,7 +45,7 @@ Define the logic for elective allocation based on GPA and preferences.
 
 ---
 
-##  Running the Allocation Procedure
+## Running the Allocation Procedure
 
 After the tables and procedure are created, execute the procedure using:
 
@@ -70,8 +69,8 @@ SELECT * FROM Allotments;
 ### Check Unallotted Students:
 ```sql
 SELECT * FROM UnallotedStudents;
-``
-`
+```
+
 ---
 
 ## Contact
