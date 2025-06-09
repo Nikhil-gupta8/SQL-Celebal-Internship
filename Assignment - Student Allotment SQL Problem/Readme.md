@@ -32,7 +32,7 @@ The system uses the following tables:
 To create and populate the required tables, please refer to the SQL script provided:
 
 **[Student Allotment SQL Table]**  
-*(Insert link or filename here if uploading separately)*
+Assignment - Student Allotment SQL Problem
 
 ---
 
