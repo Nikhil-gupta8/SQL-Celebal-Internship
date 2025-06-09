@@ -31,7 +31,7 @@ The system uses the following tables:
 
 To create and populate the required tables, please refer to the SQL script provided:
 
-**[Student Allotment SQL Table] (Assignment - Student Allotment SQL Problem/Student Allotment SQL Table.sql)**
+**[Student Allotment SQL Table](Assignment - Student Allotment SQL Problem/Student Allotment SQL Table.sql)**
 
 ---
 
