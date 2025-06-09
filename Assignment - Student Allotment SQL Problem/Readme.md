@@ -31,7 +31,7 @@ The system uses the following tables:
 
 To create and populate the required tables, please refer to the SQL script provided:
 
-**[Student Allotment SQL Table] (https://github.com/Nikhil-gupta8/SQL-Celebal-Internship/tree/bcebf94838afe35476b42931808d0e9a329af65a/Assignment%20-%20Student%20Allotment%20SQL%20Table)**
+**[Student Allotment SQL Table] (Assignment - Student Allotment SQL Problem/Student Allotment SQL Table.sql)**
 
 ---
 
