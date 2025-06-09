@@ -70,6 +70,12 @@ SELECT * FROM Allotments;
 ### Check Unallotted Students:
 ```sql
 SELECT * FROM UnallotedStudents;
-```
+``
+`
+---
+
+## Contact
+
+For any questions or feedback, please contact **Nikhil Gupta**.
 
 ---
