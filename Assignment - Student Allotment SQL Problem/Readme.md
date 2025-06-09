@@ -31,8 +31,7 @@ The system uses the following tables:
 
 To create and populate the required tables, please refer to the SQL script provided:
 
-**[Student Allotment SQL Table]**  
-**[Student Allotment SQL Table](/Student%20Allotment%20SQL%20Solution.sql)**
+**Student Allotment SQL Table**
 
 ---
 
@@ -40,8 +39,7 @@ To create and populate the required tables, please refer to the SQL script provi
 
 Define the logic for elective allocation based on GPA and preferences.
 
-**[Student Allotment SQL Solution]**  
-*(Insert link or filename here if uploading separately)*
+**Student Allotment SQL Solution**
 
 ---
 
