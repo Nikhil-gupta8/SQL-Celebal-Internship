@@ -51,5 +51,3 @@ This solution is built using **SQL Server** and involves:
 
 - **Execution of Stored Procedure**
   - Running `UpdateSubjectAllotments` to process pending change requests.
-
----
