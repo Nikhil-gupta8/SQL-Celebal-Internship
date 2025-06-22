@@ -53,10 +53,3 @@ This solution is built using **SQL Server** and involves:
   - Running `UpdateSubjectAllotments` to process pending change requests.
 
 ---
-
-- **Language**: T-SQL (Transact-SQL)
-
----
-
-## 📂 Folder Structure
-
