@@ -16,8 +16,6 @@ This repository contains my personal solutions to the SQL problems listed in the
   - [Advanced Select and Joins](#advanced-select-and-joins)
   - [Subqueries](#subqueries)
   - [Advanced String Functions / Regex / Clause](#advanced-string-functions--regex--clause)
-- [Usage](#usage)
-- [Contact](#contact)
 
 ---
 
@@ -94,21 +92,5 @@ This repository provides structured solutions to the **Top 50 SQL problems** ava
 - Find Users With Valid E-Mails  
 
 ---
-
-## Usage
-
-To use the solutions:
-
-You can run these queries on platforms like:
-
-MySQL Workbench
-
-PostgreSQL
-
-LeetCode SQL Online Editor
-
-SQLite
-
-or any SQL-based database platform.
 
 Happy Querying! Keep practicing and mastering SQL 💻
