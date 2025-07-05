@@ -1,95 +1,30 @@
-# SCD Types - Stored Procedures in SQL Server
+# SCD Types - SQL Server Stored Procedures
 
-This repository contains stored procedure implementations for handling **Slowly Changing Dimensions (SCD)** in a Data Warehouse using **SQL Server**.
-
-SCDs are used to manage and store historical data in dimension tables. This project demonstrates all major SCD types including Type 0, 1, 2, 3, 4, and 6.
-
----
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [SCD Types Covered](#scd-types-covered)
-- [Database Schema](#database-schema)
-- [Stored Procedures](#stored-procedures)
-- [Usage](#usage)
-- [Contact](#contact)
-
----
-
-## Introduction
-
-In data warehousing, **Slowly Changing Dimensions (SCDs)** are used to track changes in dimension attributes over time. Depending on the business need, we either overwrite, preserve, or archive these changes. This project provides examples of SQL Server stored procedures to implement each SCD type.
-
----
+This project demonstrates the implementation of all major Slowly Changing Dimension (SCD) types using Microsoft SQL Server.
 
 ## SCD Types Covered
+- **SCD Type 0** – No changes allowed (Read-only)
+- **SCD Type 1** – Overwrite old data (No history)
+- **SCD Type 2** – Add new row for each change (Keeps history)
+- **SCD Type 3** – Store previous value in another column
+- **SCD Type 4** – Keep change history in a separate table
+- **SCD Type 6** – Hybrid of Types 1, 2, and 3
 
-| SCD Type | Description |
-|----------|-------------|
-| **Type 0** | Fixed attribute — no changes allowed. |
-| **Type 1** | Overwrites old data with new data (no history). |
-| **Type 2** | Preserves full history by adding new rows. |
-| **Type 3** | Keeps current and previous values in columns. |
-| **Type 4** | Stores history in a separate history table. |
-| **Type 6** | Hybrid of Types 1, 2, and 3. |
+## Table Structure
 
----
+- `DimCustomer` (Main dimension table)
+- `DimCustomer_History` (For SCD Type 4)
 
-## Database Schema
+## Files Included
 
-### Dimension Table: `DimCustomer`
+- `SCD_Types_SQLServer.sql`: Contains all table definitions, sample data, and stored procedures for each SCD type.
 
-```sql
-CustomerID     INT PRIMARY KEY  
-Name           NVARCHAR(100)  
-City           NVARCHAR(100)  
-PreviousCity   NVARCHAR(100)   -- (SCD Type 3, 6)  
-EffectiveDate  DATETIME        -- (SCD Type 2, 6)  
-ExpiryDate     DATETIME        -- (SCD Type 2, 6)  
-IsCurrent      BIT             -- (SCD Type 2, 6)
-🔹 History Table (For SCD Type 4): DimCustomer_History
-sql
-Copy
-Edit
-CustomerID   INT  
-Name         NVARCHAR(100)  
-City         NVARCHAR(100)  
-ChangeDate   DATETIME
-🛠️ Stored Procedures
-Stored procedures are provided for:
+## How to Run
 
-SCD_Type0_Update
+1. Create a database named `SCD` in SQL Server Management Studio (SSMS).
+2. Run the SQL script from this repo in the `SCD` database.
+3. Use the procedures to test each SCD type (0 to 6).
 
-SCD_Type1_Update
-
-SCD_Type2_Update
-
-SCD_Type3_Update
-
-SCD_Type4_Update
-
-SCD_Type6_Update
-
-Each stored procedure is parameterized and ready to be executed with CustomerID and the updated City.
-
-▶️ Usage
-1. Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/scd-sql-server.git
-cd scd-sql-server
-2. Execute in SQL Server
-Open the SQL scripts in SSMS or Azure Data Studio.
-
-Run the CREATE TABLE scripts.
-
-Run the stored procedures as needed:
-
-sql
-Copy
-Edit
-EXEC SCD_Type1_Update @CustomerID = 101, @NewCity = 'Mumbai';
-EXEC SCD_Type2_Update @CustomerID = 102, @NewCity = 'Delhi';
-📬 Contact
+## Author
+- **Name**: Your Name
+- **Tools Used**: Microsoft SQL Server Management Studio (SSMS)
